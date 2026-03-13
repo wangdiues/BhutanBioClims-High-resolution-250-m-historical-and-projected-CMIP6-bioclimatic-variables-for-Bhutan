@@ -17,11 +17,17 @@ function Invoke-Hf {
     else {
         & hf @Args
     }
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "hf command failed with exit code ${LASTEXITCODE}: hf $($Args -join ' ')"
+    }
 }
 
 if (-not (Get-Command hf -ErrorAction SilentlyContinue)) {
     throw "The 'hf' CLI is not installed. Install it first with: python -m pip install -U huggingface_hub"
 }
+
+$env:HF_HUB_DISABLE_PROGRESS_BARS = "1"
 
 $root = Resolve-Path (Join-Path $PSScriptRoot "..\..")
 $datasetCard = Join-Path $root "00_project_metadata\huggingface_dataset_card.md"
@@ -47,12 +53,31 @@ $include = @(
     "09_release/**"
 )
 
-$args = @("upload-large-folder", $RepoId, $root, "--repo-type", "dataset")
-foreach ($pattern in $include) {
-    $args += @("--include", $pattern)
-}
-
 Write-Host "Uploading large dataset folders..."
-Invoke-Hf @args
+$includeJson = $include | ConvertTo-Json -Compress
+
+@'
+from huggingface_hub import HfApi
+import json
+import sys
+
+repo_id = sys.argv[1]
+root = sys.argv[2]
+token = sys.argv[3] or None
+allow_patterns = json.loads(sys.argv[4])
+
+api = HfApi(token=token)
+api.upload_large_folder(
+    repo_id=repo_id,
+    folder_path=root,
+    repo_type="dataset",
+    allow_patterns=allow_patterns,
+    print_report=False,
+)
+'@ | python - $RepoId $root $Token $includeJson
+
+if ($LASTEXITCODE -ne 0) {
+    throw "Python large-folder upload failed with exit code $LASTEXITCODE."
+}
 
 Write-Host "Dataset publication complete."
