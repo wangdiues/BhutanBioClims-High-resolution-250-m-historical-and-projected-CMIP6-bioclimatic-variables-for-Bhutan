@@ -64,3 +64,9 @@ See `PUBLISHING.md` for the recommended publication workflow:
 - GitHub for code and metadata
 - External hosting for large raster data
 
+## Public Locations
+
+- GitHub repository: `https://github.com/wangdiues/BhutanBioClims-High-resolution-250-m-historical-and-projected-CMIP6-bioclimatic-variables-for-Bhutan`
+- Hugging Face dataset: `https://huggingface.co/datasets/Wangdiues/cmip6_bioclim_bhutan_v10`
+- GitHub release `v1.0.0`: `https://github.com/wangdiues/BhutanBioClims-High-resolution-250-m-historical-and-projected-CMIP6-bioclimatic-variables-for-Bhutan/releases/tag/v1.0.0`
+
