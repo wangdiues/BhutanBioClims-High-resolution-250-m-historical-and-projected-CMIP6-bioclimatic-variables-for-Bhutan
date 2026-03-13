@@ -1,0 +1,73 @@
+@echo off
+REM ============================================
+REM EXAMPLE BATCH SCRIPT - COPY AND EDIT PATHS
+REM ============================================
+REM This is an example script. Copy this file
+REM and update the paths below for your system.
+REM ============================================
+
+echo ============================================================
+echo BIOCLIM Master Processor - Production Run (EXAMPLE)
+echo ============================================================
+echo.
+echo IMPORTANT: Edit this file and update the paths below!
+echo.
+
+REM ============================================
+REM STEP 1: UPDATE THESE PATHS FOR YOUR SYSTEM
+REM ============================================
+set INPUT_ROOT=C:\Your\Data\01_raw_cmip6_data\01_cmip6_monthly
+set OUTPUT_ROOT=C:\Your\Output\BIOCLIM
+set RSCRIPT_PATH=C:\Program Files\R\R-4.4.0\bin\Rscript.exe
+set SCRIPT_PATH=C:\Your\Repo\10_scripts\r\bioclim_master.R
+REM ============================================
+
+echo Using configuration:
+echo   Input:  %INPUT_ROOT%
+echo   Output: %OUTPUT_ROOT%
+echo   Script: %SCRIPT_PATH%
+echo   R:      %RSCRIPT_PATH%
+echo.
+
+REM Check if R exists
+if not exist "%RSCRIPT_PATH%" (
+    echo ERROR: Rscript not found at %RSCRIPT_PATH%
+    echo Please update RSCRIPT_PATH in this file.
+    pause
+    exit /b 1
+)
+
+REM Check if input exists
+if not exist "%INPUT_ROOT%" (
+    echo ERROR: Input directory not found: %INPUT_ROOT%
+    echo Please update INPUT_ROOT in this file.
+    pause
+    exit /b 1
+)
+
+if not exist "%SCRIPT_PATH%" (
+    echo ERROR: Script not found: %SCRIPT_PATH%
+    echo Please update SCRIPT_PATH in this file.
+    pause
+    exit /b 1
+)
+
+echo Starting processing...
+echo.
+
+"%RSCRIPT_PATH%" "%SCRIPT_PATH%" ^
+  --input_root "%INPUT_ROOT%" ^
+  --output_root "%OUTPUT_ROOT%" ^
+  --overwrite FALSE ^
+  --memfrac 0.5
+
+echo.
+echo ============================================================
+echo Processing complete!
+echo ============================================================
+echo.
+echo Check output in: %OUTPUT_ROOT%
+echo Check logs in:   %OUTPUT_ROOT%\_logs
+echo.
+pause
+

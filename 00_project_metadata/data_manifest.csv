@@ -1,0 +1,12 @@
+path,type,file_count,tif_count,size_bytes,last_modified_utc
+00_project_metadata,directory,25,0,29369,2026-02-22T11:16:57Z
+01_raw_cmip6_data,directory,4541,4495,15769313670,2026-02-22T01:57:22Z
+02_bias_corrected_data,directory,1,0,72,2026-02-21T14:50:23Z
+03_bioclim_variables,directory,2489,2489,3855368364,2026-02-22T09:59:08Z
+04_ensemble_products,directory,988,988,1584268438,2026-02-22T10:40:51Z
+05_multicollinearity_analysis,directory,3,0,7366,2026-02-22T10:46:03Z
+06_quality_control,directory,6,0,905918,2026-02-22T10:43:36Z
+07_logs,directory,7,0,4427909,2026-02-22T10:45:30Z
+08_model_ready_layers,directory,386,380,553779240,2026-02-22T02:34:04Z
+09_release,directory,1,0,3039,2026-02-20T19:15:00Z
+10_scripts,directory,19,0,102485,2026-02-22T11:14:58Z

@@ -1,0 +1,20 @@
+variable_code,variable_name,description,units
+BIO01,annual_mean_temperature,Annual Mean Temperature,degC
+BIO02,mean_diurnal_range,Mean of monthly (tasmax - tasmin),degC
+BIO03,isothermality,(BIO02/BIO07)*100,percent
+BIO04,temperature_seasonality,Standard deviation of monthly mean temperature * 100,unitless
+BIO05,max_temperature_warmest_month,Maximum temperature of warmest month,degC
+BIO06,min_temperature_coldest_month,Minimum temperature of coldest month,degC
+BIO07,temperature_annual_range,BIO05-BIO06,degC
+BIO08,mean_temperature_wettest_quarter,Mean temperature of wettest quarter,degC
+BIO09,mean_temperature_driest_quarter,Mean temperature of driest quarter,degC
+BIO10,mean_temperature_warmest_quarter,Mean temperature of warmest quarter,degC
+BIO11,mean_temperature_coldest_quarter,Mean temperature of coldest quarter,degC
+BIO12,annual_precipitation,Annual precipitation sum,mm
+BIO13,precipitation_wettest_month,Precipitation of wettest month,mm
+BIO14,precipitation_driest_month,Precipitation of driest month,mm
+BIO15,precipitation_seasonality,Coefficient of variation of monthly precipitation,percent
+BIO16,precipitation_wettest_quarter,Precipitation of wettest quarter,mm
+BIO17,precipitation_driest_quarter,Precipitation of driest quarter,mm
+BIO18,precipitation_warmest_quarter,Precipitation of warmest quarter,mm
+BIO19,precipitation_coldest_quarter,Precipitation of coldest quarter,mm

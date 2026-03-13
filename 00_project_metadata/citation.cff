@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this dataset infrastructure, please cite as below."
+title: "Bhutan CMIP6 BIOCLIM Dataset Infrastructure"
+version: "1.0.0"
+date-released: "2026-02-22"
+authors:
+  - family-names: "Wangdi"
+    given-names: "Wangdi"
+    affiliation: "Forest Resources Planning and Management Division, Department of Forests and Park Services, Ministry of Energy and Natural Resources, Royal Government of Bhutan, Thimphu, Bhutan"
+    orcid: "https://orcid.org/0009-0007-7726-1742"
+keywords:
+  - "CMIP6"
+  - "Bhutan"
+  - "BIOCLIM"
+  - "species distribution modeling"
+  - "ensemble climate"
+license: "MIT"
+references:
+  - type: dataset
+    authors:
+      - family-names: "Dorji"
+        given-names: "Sangay"
+      - family-names: "Stewart"
+        given-names: "Stephen"
+      - family-names: "Bajwa"
+        given-names: "Ali"
+      - family-names: "Aziz"
+        given-names: "Ammar"
+      - family-names: "Shabbir"
+        given-names: "Asad"
+      - family-names: "Adkins"
+        given-names: "Steve"
+    title: "High-resolution (250 m) historical and projected (CMIP6) air temperature and precipitation grids for Bhutan"
+    version: "v1"
+    year: 2025
+    publisher:
+      name: "CSIRO"
+    doi: "10.25919/pec2-hs50"
+    url: "https://doi.org/10.25919/pec2-hs50"

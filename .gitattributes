@@ -1,0 +1,22 @@
+# Git Attributes for Bhutan CMIP6 BIOCLIM Ensemble Atlas
+
+# Ensure consistent line endings
+* text=auto
+*.R text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.docx binary
+*.xlsx binary
+
+# R data files (if any small ones are tracked)
+*.rds binary
+*.RData binary

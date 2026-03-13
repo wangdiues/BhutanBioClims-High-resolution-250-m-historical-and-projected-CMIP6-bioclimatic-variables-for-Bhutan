@@ -1,0 +1,3 @@
+Spatial resolution: 250 m
+Grid alignment: validated in 06_quality_control/raster_alignment_report.txt
+Latest validation timestamp: 2026-02-22T17:14:58+06:00

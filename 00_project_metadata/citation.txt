@@ -1,0 +1,16 @@
+Bhutan CMIP6 BIOCLIM Dataset Infrastructure
+
+Software citation:
+Wangdi Wangdi (2026). Bhutan CMIP6 BIOCLIM Dataset Infrastructure (v1.0).
+
+Author Affiliation:
+Forest Resources Planning and Management Division,
+Department of Forests and Park Services,
+Ministry of Energy and Natural Resources,
+Royal Government of Bhutan, Thimphu, Bhutan
+
+Primary climate data citation (APA 7):
+Dorji, S., Stewart, S., Bajwa, A., Aziz, A., Shabbir, A., & Adkins, S. (2025). High-resolution (250 m) historical and projected (CMIP6) air temperature and precipitation grids for Bhutan (v1) [Data set]. CSIRO. https://doi.org/10.25919/pec2-hs50
+
+Methods Section In-Text Citation:
+"Historical and projected climate variables were extracted from the 250 m resolution grids for Bhutan (Dorji et al., 2025)."

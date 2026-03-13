@@ -1,0 +1,34 @@
+cmip6_bioclim_bhutan_v1_0
+|- .github/
+|  |- scripts/
+|  |- workflows/
+|- 00_project_metadata/
+|- 01_raw_cmip6_data/
+|  |- 01_cmip6_monthly/
+|  |- 02_original_bioclim_exports/
+|  |- 03_source_documents/
+|- 02_bias_corrected_data/
+|- 03_bioclim_variables/
+|  |- 01_bioclim_by_gcm/
+|- 04_ensemble_products/
+|  |- ensemble_maximum/
+|  |- ensemble_mean/
+|  |- ensemble_minimum/
+|  |- ensemble_standard_deviation/
+|- 05_multicollinearity_analysis/
+|- 06_quality_control/
+|- 07_logs/
+|  |- migration_logs/
+|  |- processing_logs/
+|  |- run_manifests/
+|- 08_model_ready_layers/
+|  |- 03_modeling_ready_stacks/
+|  |- 97_rerun_validation/
+|  |- 99_test_run/
+|- 09_release/
+|  |- v1_0_0/
+|- 10_scripts/
+|  |- ps/
+|  |- r/
+
+Generated: 2026-02-22T17:14:58+06:00

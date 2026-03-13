@@ -1,0 +1,12 @@
+gcm_id,gcm_name,status,notes
+acces_cm2,ACCESS-CM2,implemented,canonical model directory
+cnrm_cm6_1,CNRM-CM6-1,implemented,canonical model directory
+cnrm_esm2_1,CNRM-ESM2-1,implemented,canonical model directory
+historical,Historical_bundle,derived,baseline-only mirror folder
+inm_cm4_8,INM-CM4-8,implemented,canonical model directory
+inm_cm5_0,INM-CM5-0,implemented,canonical model directory
+miroc_es2l,MIROC-ES2L,implemented,canonical model directory
+miroc6,MIROC6,implemented,canonical model directory
+mpi_esm1_2_lr,MPI-ESM1-2-LR,implemented,canonical model directory
+mri_esm2_0,MRI-ESM2-0,implemented,canonical model directory
+noresm2_mm,NorESM2-MM,implemented,canonical model directory

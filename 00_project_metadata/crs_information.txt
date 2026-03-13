@@ -1,0 +1,4 @@
+Reference grid source: 03_bioclim_variables/01_bioclim_by_gcm/acces_cm2/1986_2015/historical/bhutan_cmip6_acces_cm2_historical_1986_2015_bio01_v1_0.tif
+Reference CRS: PROJCRS["DRUKREF 03 / Bhutan National Grid",
+Validation source: 06_quality_control/raster_alignment_report.txt
+Validated on: 2026-02-22T17:14:58+06:00
